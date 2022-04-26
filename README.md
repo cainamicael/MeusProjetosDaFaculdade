@@ -1,2 +1,2 @@
 # MeusProjetosDaFaculdade
- Projetos e exercícios da faculdade
+ Projetos, exercícios e avaliações da faculdade de Ciência da Computação
