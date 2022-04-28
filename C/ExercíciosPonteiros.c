@@ -19,5 +19,12 @@ void main(){
     printf("O endereço de y eh  = %p\n",&y);
     *p = &y;
     printf("O valor da variável valor foi alterado? Valor = %d\n",valor);
+    valor = 10;
+    int *m;
+    m = &valor;
+    printf("O que isso faz? %d",*m);
+    //mudando o valor de valor sem mexer na variavel valor
+    *m = 45;
+    printf("O valor de valor é %d",valor);
 
 }
