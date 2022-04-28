@@ -27,6 +27,6 @@ public class App {
     }
 }
 
-/*
-
+/* Para ver no Github:
+https://github.com/cainamicael/MeusProjetosDaFaculdade/tree/main/Java/Prova1_JavaPoo/VerSeEPalindromo
 */
