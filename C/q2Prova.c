@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <conio.h>
 
-
 void produtoEscalar(int** M, int linhas, int colunas, int numero) {
     int i, j;
     int x = 0;
@@ -24,12 +23,14 @@ do{
 	
     printf("Informe a quantidade de linhas da matriz: ");
     scanf("%d",&linhas);
+
 }while(linhas<=0);
     
 do{
 	
     printf("\nInforme a quantidade de colunas da matriz: ");
     scanf("%d",&colunas);
+
 }while(colunas<=0);
    
 	
@@ -52,12 +53,12 @@ do{
     printf("\nSA matriz multiplicada por %d eh:\n",num);
     produtoEscalar(M, linhas, colunas, num);
     
-  // Desalocar as colunas da matriz da memória.
+
 	for(i=0;i<linhas;i++){
 		free(M[i]);
 	}
 	
-// Desalocar as linhas da matriz da memória.	
+	
 	free(M);
 
     return 0;

@@ -2,8 +2,8 @@
 #include <stdlib.h>
 #include <math.h>
 
-
 int somaVetor(int *s, int n){
+
 	int i, x, soma=0;
 		for(i=0; i<n; i++){
 			x = s[i];
@@ -14,6 +14,7 @@ int somaVetor(int *s, int n){
 }
 
 int main() {
+
 	int *s;
 	int soma, tamanho, i;
 	
@@ -21,6 +22,7 @@ int main() {
 		
 	printf("Qual o tamanho do vetor? ");
 	scanf("%d",&tamanho);
+	
 }while(tamanho<=0);
 	
 	s = (int*)malloc(tamanho * sizeof(int));
