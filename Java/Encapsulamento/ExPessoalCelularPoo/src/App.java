@@ -1,9 +1,11 @@
 import samsung.Celular;
 public class App {
     public static void main(String[] args) throws Exception {
-
+        
+        //fabricando um s22
         Celular s22 = new Celular();
-        //tirando da caixa
+
+        //tirando o s22 da caixa
         s22.status(); 
         s22.statusLogico();
         
