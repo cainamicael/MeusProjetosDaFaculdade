@@ -5,6 +5,7 @@ public class App {
         Celular s22 = new Celular();
         //tirando da caixa
         s22.status(); 
+        s22.statusLogico();
         
         //procedimentos na ordem certa
         s22.ligar();
@@ -30,6 +31,7 @@ public class App {
 
         s22.desligar();
         s22.status();
-        
+        s22.statusLogico();
+
     }
 }

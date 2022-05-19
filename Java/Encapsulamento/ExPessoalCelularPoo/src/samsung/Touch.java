@@ -11,5 +11,6 @@ public interface Touch {
     public abstract void abrirInstagram();
     public abstract void fecharInstagram();
     public abstract void status();
+    public abstract void statusLogico();
 
 }
