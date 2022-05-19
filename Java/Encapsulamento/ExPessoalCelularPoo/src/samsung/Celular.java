@@ -26,16 +26,16 @@ public class Celular implements Touch {
     public void setDesbloqueado(boolean desbloqueado) {
         this.desbloqueado = desbloqueado;
     }
-    public boolean isWppAberto() {
+    public boolean isWhatsappAberto() {
         return whatsappAberto;
     }
-    public void setWppAberto(boolean wppAberto) {
+    public void setWhatsappAberto(boolean wppAberto) {
         this.whatsappAberto = wppAberto;
     }
-    public boolean isInstaAberto() {
+    public boolean isInstagramAberto() {
         return instagramAberto;
     }
-    public void setInstaAberto(boolean instaAberto) {
+    public void setInstagramAberto(boolean instaAberto) {
         this.instagramAberto = instaAberto;
     }
 
@@ -43,9 +43,9 @@ public class Celular implements Touch {
 
     @Override
     public void abrirInstagram() {
-        if (isLigado() && isDesbloqueado() && !(isInstaAberto())){
+        if (isLigado() && isDesbloqueado() && !(isInstagramAberto())){
             System.out.println("Abrindo Instagram...");
-            setInstaAberto(true);
+            setInstagramAberto(true);
         }else {
             System.out.println("Verifique se está ligado ou desbloqueado, ou então, o app já deve estar aberto!");
         }
@@ -53,9 +53,9 @@ public class Celular implements Touch {
 
     @Override
     public void abrirWhatsapp() {
-        if (isLigado() && isDesbloqueado() && !(isWppAberto())){
+        if (isLigado() && isDesbloqueado() && !(isWhatsappAberto())){
             System.out.println("Abrindo o whatsapp...");
-            setWppAberto(true);
+            setWhatsappAberto(true);
         }else {
             System.out.println("Verifique se está ligado ou desbloqueado, ou então, o app já deve estar aberto!");
         }   
@@ -87,8 +87,8 @@ public class Celular implements Touch {
             System.out.println("Desligando...");
             setLigado(false);
             setDesbloqueado(false);
-            setWppAberto(false);
-            setInstaAberto(false);
+            setWhatsappAberto(false);
+            setInstagramAberto(false);
         }else {
             System.out.println("O celular já está desligado!");
         }   
@@ -96,9 +96,9 @@ public class Celular implements Touch {
 
     @Override
     public void fecharInstagram() {
-        if (isLigado() && isDesbloqueado() && isInstaAberto()){
+        if (isLigado() && isDesbloqueado() && isInstagramAberto()){
             System.out.println("Fechando instagram...");
-            setInstaAberto(false);
+            setInstagramAberto(false);
         }else {
             System.out.println("O insagram já está fechado!");
         } 
@@ -106,9 +106,9 @@ public class Celular implements Touch {
 
     @Override
     public void fecharWhatsapp() {
-        if (isLigado() && isDesbloqueado() && isWppAberto()){
+        if (isLigado() && isDesbloqueado() && isWhatsappAberto()){
             System.out.println("Fechando o whatsapp...");
-           setWppAberto(false);
+           setWhatsappAberto(false);
         }else {
             System.out.println("O whatsapp já está fechado! ");
         } 
@@ -135,11 +135,11 @@ public class Celular implements Touch {
             System.out.println("Celular Desbloqueado");
         else 
             System.out.println("Celular Bloqueado");
-        if (isWppAberto())
+        if (isWhatsappAberto())
             System.out.println("Whatsapp aberto");
         else 
             System.out.println("Whatsapp Fechado");
-        if (isInstaAberto())
+        if (isInstagramAberto())
             System.out.println("Instagram aberto");
         else 
             System.out.println("Instagram Fechado");
@@ -151,8 +151,8 @@ public class Celular implements Touch {
         System.out.printf("%n");
         System.out.println("Ligado? " + isLigado());
         System.out.println("Desbloqueado? " + isDesbloqueado());
-        System.out.println("Whatsapp aberto? " + isWppAberto());
-        System.out.println("Instagram Aberto? " + isInstaAberto());
+        System.out.println("Whatsapp aberto? " + isWhatsappAberto());
+        System.out.println("Instagram Aberto? " + isInstagramAberto());
         System.out.printf("%n");
     }
 
