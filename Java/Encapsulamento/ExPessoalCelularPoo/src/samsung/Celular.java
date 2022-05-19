@@ -4,14 +4,14 @@ public class Celular implements Touch {
     
     private boolean ligado;
     private boolean desbloqueado;
-    private boolean wppAberto;
-    private boolean instaAberto;
+    private boolean whatsappAberto;
+    private boolean instagramAberto;
 
     public Celular () {
         this.ligado = false;
         this.desbloqueado = false;
-        this.wppAberto = false;
-        this.instaAberto = false;
+        this.whatsappAberto = false;
+        this.instagramAberto = false;
     }
 
     public boolean isLigado() {
@@ -27,16 +27,16 @@ public class Celular implements Touch {
         this.desbloqueado = desbloqueado;
     }
     public boolean isWppAberto() {
-        return wppAberto;
+        return whatsappAberto;
     }
     public void setWppAberto(boolean wppAberto) {
-        this.wppAberto = wppAberto;
+        this.whatsappAberto = wppAberto;
     }
     public boolean isInstaAberto() {
-        return instaAberto;
+        return instagramAberto;
     }
     public void setInstaAberto(boolean instaAberto) {
-        this.instaAberto = instaAberto;
+        this.instagramAberto = instaAberto;
     }
 
     //metodos abstratos
@@ -155,5 +155,5 @@ public class Celular implements Touch {
         System.out.println("Instagram Aberto? " + isInstaAberto());
         System.out.printf("%n");
     }
-    
+
 }
