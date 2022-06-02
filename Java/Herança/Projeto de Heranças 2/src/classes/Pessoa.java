@@ -1,6 +1,6 @@
 package classes;
 //superclasse
-public abstract class Pessoa {
+public abstract class Pessoa { //public abstract class Não posso instanciar Pessoa
     protected String nome;
     protected int idade;
     protected String sexo;
